@@ -3,11 +3,12 @@
 
 ## Technologies or Stack Used:
 
-Java 17
-Spring Boot
-Apache Kafka
-MySQL
-Lombok Plugin
+1) Java 17
+2) Spring Boot
+3) Apache Kafka
+4) MySQL
+5) Lombok Plugin
+6) Postman
 
 
 ## PREREQUISITES:
