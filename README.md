@@ -13,7 +13,7 @@
 
 ## PREREQUISITES:
 
-1)CREATE DATABASE progress_db. (Refer data.sql file)
+1)CREATE DATABASE progress_db. (Refer data.sql file, present in resources folder)
 
 2)Clone the progress-service repo and build run.
 
