@@ -15,4 +15,7 @@
 
 1)CREATE DATABASE progress_db. (Refer data.sql file)
 
-2)Clone the progress-service repo and make it running.
+2)Clone the progress-service repo and build run.
+
+### Refer
+https://github.com/Neeraj-Kashyap/training-service for project setup
