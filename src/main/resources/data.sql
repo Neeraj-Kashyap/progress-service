@@ -1,0 +1,1 @@
+CREATE DATABASE progress_db;

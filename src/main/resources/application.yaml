@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: progress-service
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 20
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/progress_db
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: progress-service
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      max-poll-records: 1
+
+server:
+  port: 8082
+#  servlet:
+#    context-path: /api
+
+logging:
+  level:
+    com.progress: DEBUG
+    org.springframework.kafka: DEBUG
+    org.hibernate.SQL: DEBUG
